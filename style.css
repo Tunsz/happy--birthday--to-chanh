@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
-    background-image: -webkit-gradient(radial,
-            50% 50%,
-            0,
-            50% 50%,
-            100,
-            color-stop(0%, #374566),
-            color-stop(100%, #010203));
-    background-image: -webkit-radial-gradient(#374566, #010203);
-    background-image: -moz-radial-gradient(#374566, #010203);
-    background-image: -o-radial-gradient(#374566, #010203);
-    background-image: radial-gradient(#374566, #010203);
+    background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/62/57/7157aaf056b09c7.jpeg) no-repeat center center;
+    background-size: cover;
+
     font-family: 'Lobster', cursive;
 }
 
@@ -21,14 +13,16 @@ span {
 
 .container {
     width: 800px;
-    height: 100%;
+    height: 53%;
     padding: 10px;
     margin: 0 auto;
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .balloon {
-    width: 738px;
+    width: 590px;
     margin: 0 auto;
     padding-top: 30px;
     position: relative;
@@ -272,6 +266,7 @@ span {
     -moz-animation: balloon1 4s ease-in-out infinite;
     -o-animation: balloon1 4s ease-in-out infinite;
     animation: balloon1 4s ease-in-out infinite;
+    color: #00e2ff;
 }
 
 .balloon>div:before {
